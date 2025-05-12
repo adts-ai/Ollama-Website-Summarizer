@@ -23,8 +23,8 @@ Install the necessary libraries using pip:
 pip install requests beautifulsoup4 ipython ollama
 ```
 ## Usage
-Initialization
-You can initialize the WebsiteSummarizer class by specifying the model and the output language:
+### Initialization
+You can initialize the `WebsiteSummarizer` class by specifying the model and the output language:
 
 ```python
 
