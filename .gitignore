@@ -1,12 +1,25 @@
-# Ignore Python bytecode files
-*.pyc
-__pycache__/
-
 # Ignore environment variables file
 .env
 
 # Ignore Streamlit cache and logs
 /.streamlit/
 
-# Ignore virtual environments
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv
 venv/
+ENV/
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# Ollama model files (if applicable)
+*.h5
+
+# Operating System Files
+.DS_Store
+Thumbs.db
