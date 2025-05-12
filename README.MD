@@ -1,21 +1,28 @@
 # Website Summarizer
 
-A Python-based tool for summarizing the content of websites using the Ollama model. The tool scrapes relevant text from websites, filters out unnecessary elements (like images and ads), and generates a concise summary in a specified format (such as Markdown).
+## A Python-based Tool to Summarize Website Content 🌐💬
+
+The **Website Summarizer** is a Python-based tool designed to scrape website content and generate a concise, readable summary. Leveraging the power of the **Ollama** model, it filters out unnecessary elements such as images and ads, and summarizes the core content in a specified format, such as **Markdown**.
+
+![Website Summarizer](./visuals/website_summarizer_visual.png)  <!-- Optional image path -->
 
 ## Features
 
-- Scrapes websites and extracts relevant text.
-- Uses the Ollama model for content summarization.
-- Allows output in different formats (currently supports Markdown).
-- Easily integrateable with any URL to summarize website content.
+✨ **Key Features**:
+- **Scrapes websites** and extracts only relevant text for summarization.
+- **Uses the Ollama AI model** for generating accurate, concise summaries.
+- **Supports multiple output formats** (Markdown by default).
+- **Easy integration**: Simply provide any website URL to get the summary.
 
 ## Requirements
 
-- Python 3.x
-- `requests`: For making HTTP requests to retrieve the webpage content.
-- `BeautifulSoup`: For parsing and cleaning up the HTML content.
-- `IPython`: For rendering the summary in Markdown format (optional, for Jupyter environments).
-- `ollama`: For accessing the Ollama AI model.
+To use the **Website Summarizer**, make sure you have the following:
+
+- **Python 3.x**
+- **requests**: For making HTTP requests to retrieve webpage content.
+- **BeautifulSoup**: For parsing and cleaning HTML content.
+- **IPython**: For rendering the summary in Markdown format (optional, for Jupyter environments).
+- **ollama**: For interacting with the Ollama AI model.
 
 Install the necessary libraries using pip:
 
@@ -54,7 +61,7 @@ You can change the AI model or output language by initializing `WebsiteSummarize
 summarizer = WebsiteSummarizer(model="llama3.2", language="text")  # For plain text output
 ```
 
-## How it Works
+## How it Works 🔍
 1. Website Scraping: The `Website` class scrapes content from the provided URL, cleaning up unnecessary elements such as images, scripts, and styles.
 
 2. Prompt Generation: The `WebsiteSummarizer` class creates a message format for the Ollama model, prompting it to generate a summary of the website content.
@@ -67,3 +74,5 @@ Summary Display: The summary is returned by the model and displayed in the speci
 summarizer = WebsiteSummarizer()
 summarizer.display_summary("https://CNN.com")
 ```
+## Contribution 🤝
+Feel free to fork this repository, open issues, or submit pull requests to improve the project!
