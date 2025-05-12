@@ -27,9 +27,9 @@ Initialization
 You can initialize the WebsiteSummarizer class by specifying the model and the output language:
 
 ```python
-Copy
-Edit
-summarizer = WebsiteSummarizer(model="llama3.2", language="markdown")```
+
+summarizer = WebsiteSummarizer(model="llama3.2", language="markdown")
+```
 Summarizing a Website
 To summarize a website, simply call the display_summary method with the website URL:
 
