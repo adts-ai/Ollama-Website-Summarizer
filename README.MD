@@ -21,47 +21,49 @@ Install the necessary libraries using pip:
 
 ```bash
 pip install requests beautifulsoup4 ipython ollama
+```
+## Usage
+### Initialization
+You can initialize the `WebsiteSummarizer` class by specifying the model and the output language:
 
-Usage
-Initialization
-You can initialize the WebsiteSummarizer class by specifying the model and the output language:
+```python
 
-python
-Copy
-Edit
 summarizer = WebsiteSummarizer(model="llama3.2", language="markdown")
-Summarizing a Website
-To summarize a website, simply call the display_summary method with the website URL:
+```
 
-python
-Copy
-Edit
+### Summarizing a Website
+To summarize a website, simply call the `display_summary` method with the website URL:
+
+```python
+
 summarizer.display_summary("https://CNN.com")
+```
 This will:
 
-Scrape the website content.
+1. Scrape the website content.
 
-Send the content to the Ollama model for summarization.
+2. Send the content to the Ollama model for summarization.
 
-Display the summarized content in the specified format (Markdown in this case).
+3. Display the summarized content in the specified format (Markdown in this case).
 
-Customizing
-You can change the AI model or output language by initializing WebsiteSummarizer with the desired settings:
+### Customizing
+You can change the AI model or output language by initializing `WebsiteSummarizer` with the desired settings:
 
-python
-Copy
-Edit
+```python
+
 summarizer = WebsiteSummarizer(model="llama3.2", language="text")  # For plain text output
-How it Works
-Website Scraping: The Website class scrapes content from the provided URL, cleaning up unnecessary elements such as images, scripts, and styles.
+```
 
-Prompt Generation: The WebsiteSummarizer class creates a message format for the Ollama model, prompting it to generate a summary of the website content.
+## How it Works
+1. Website Scraping: The `Website` class scrapes content from the provided URL, cleaning up unnecessary elements such as images, scripts, and styles.
+
+2. Prompt Generation: The `WebsiteSummarizer` class creates a message format for the Ollama model, prompting it to generate a summary of the website content.
 
 Summary Display: The summary is returned by the model and displayed in the specified format (e.g., Markdown).
 
-Example Code
-python
-Copy
-Edit
+## Example Code
+```python
+
 summarizer = WebsiteSummarizer()
 summarizer.display_summary("https://CNN.com")
+```
