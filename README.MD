@@ -22,14 +22,14 @@ Install the necessary libraries using pip:
 ```bash
 pip install requests beautifulsoup4 ipython ollama
 ```
-Usage
+## Usage
 Initialization
 You can initialize the WebsiteSummarizer class by specifying the model and the output language:
 
-python
+```python
 Copy
 Edit
-summarizer = WebsiteSummarizer(model="llama3.2", language="markdown")
+summarizer = WebsiteSummarizer(model="llama3.2", language="markdown")```
 Summarizing a Website
 To summarize a website, simply call the display_summary method with the website URL:
 
