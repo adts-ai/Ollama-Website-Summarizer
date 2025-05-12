@@ -57,7 +57,7 @@ summarizer = WebsiteSummarizer(model="llama3.2", language="text")  # For plain t
 ## How it Works
 1. Website Scraping: The `Website` class scrapes content from the provided URL, cleaning up unnecessary elements such as images, scripts, and styles.
 
-2 .Prompt Generation: The `WebsiteSummarizer` class creates a message format for the Ollama model, prompting it to generate a summary of the website content.
+2. Prompt Generation: The `WebsiteSummarizer` class creates a message format for the Ollama model, prompting it to generate a summary of the website content.
 
 Summary Display: The summary is returned by the model and displayed in the specified format (e.g., Markdown).
 
